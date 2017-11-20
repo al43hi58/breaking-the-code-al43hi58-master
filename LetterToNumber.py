@@ -26,5 +26,5 @@ possmall=alphabetsmall.find(letter)
 posbig += 1
 possmall += 1
 #display the number back to the user
-print(posbig)
-print(possmall)
+print(posbig + possmall)
+
