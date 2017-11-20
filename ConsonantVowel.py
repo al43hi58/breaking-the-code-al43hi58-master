@@ -10,7 +10,6 @@
 # consonants and other characters in a separate line instead
 # of including other characters with the consonants.
 ##############################################################
-from curses.ascii import isalpha
 
 userInput = input("Enter your sentence: ")
 vowels="AEIOUaeiou"
