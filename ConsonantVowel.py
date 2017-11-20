@@ -17,7 +17,7 @@ vowels="AEIOUaeiou"
 
 displayVowels=""
 displayConsonants=""
-displaySymbols=""
+displayOther=""
 
 for letter in userInput:
     if letter in vowels:
@@ -25,9 +25,9 @@ for letter in userInput:
     elif letter.isalpha():
         displayConsonants = displayConsonants + letter
     else:
-        displaySymbols = displaySymbols + letter
+        displayOther = displayOther + letter
 
 
 print("Vowels: " + displayVowels)
 print("Consonants: " + displayConsonants)
-print("Symbols: " + displaySymbols)
+print("Other: " + displayOther)
