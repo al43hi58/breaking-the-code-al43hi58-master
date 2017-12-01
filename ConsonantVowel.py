@@ -20,11 +20,11 @@ displayOther=""
 
 for letter in userInput:
     if letter in vowels:
-        displayVowels = displayVowels + letter
+        displayVowels += letter
     elif letter.isalpha():
-        displayConsonants = displayConsonants + letter
+        displayConsonants += letter
     else:
-        displayOther = displayOther + letter
+        displayOther += letter
 
 
 print("Vowels: " + displayVowels)

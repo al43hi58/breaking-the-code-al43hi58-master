@@ -35,3 +35,4 @@ elif len(letter) > 1:
     possmall = "type ONE letter not any more. "
 #display the number back to the user
 print(posbig + possmall)
+
