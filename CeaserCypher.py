@@ -15,19 +15,19 @@ alphabet = "abcdefghijklmopqrstuvwxyz"
 decode = raw_input("Type your sentence: ")
 decodeShift = raw_input("How many shifts to the left? ")
 
+
 def decoding():
     if Decode == "Y" or "Yes":
         for letter in decode:
-            if letter.isalpha():
-                if decodeShift.isdigit():
-                    decodenum = alphabet.find(decode)
-                    decodenum += decode
-                    decoded = alphabet.find("decodenum")
-                    print(decoded)
-                    if decodenum == "0":
-                        decodenum += 26
-                    elif decodenum == "26":
-                        decodenum -= 26
+            if letter.isalpha() and decodeShift.isdigit():
+                decodenum = alphabet.find(decode)
+                decodenum += decode
+                decoded = alphabet.find("decodenum")
+                print(decoded)
+                if decodenum == "0":
+                    decodenum += 26
+                elif decodenum == "26":
+                    decodenum -= 26
     elif Decode == "N" or "No":
         encoding()
     else:

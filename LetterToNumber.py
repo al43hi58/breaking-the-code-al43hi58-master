@@ -14,13 +14,13 @@
 
 
 # Create a variable with all the letters in the alphabet
-alphabetbig="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-alphabetsmall="abcdefghijklmnopqrstuvwxyz"
+alphabetbig = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+alphabetsmall = "abcdefghijklmnopqrstuvwxyz"
 # Ask the user to type in a letter
-letter=input("Please type a letter: ")
+letter = input("Please type a letter: ")
 # Find the position of the letter in the alphabet
-posbig=alphabetbig.find(letter)
-possmall=alphabetsmall.find(letter)
+posbig = alphabetbig.find(letter)
+possmall = alphabetsmall.find(letter)
 # As the first position is 0, we need to add 1
 posbig += 1
 possmall += 1
@@ -35,4 +35,3 @@ elif len(letter) > 1:
     possmall = "type ONE letter not any more. "
 #display the number back to the user
 print(posbig + possmall)
-

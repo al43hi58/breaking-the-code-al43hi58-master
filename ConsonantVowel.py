@@ -12,11 +12,11 @@
 ##############################################################
 
 userInput = input("Enter your sentence: ")
-vowels="AEIOUaeiou"
+vowels = "AEIOUaeiou"
 
-displayVowels=""
-displayConsonants=""
-displayOther=""
+displayVowels = ""
+displayConsonants = ""
+displayOther = ""
 
 for letter in userInput:
     if letter in vowels:
