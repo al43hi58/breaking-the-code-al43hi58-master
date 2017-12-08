@@ -12,16 +12,16 @@ from pip._vendor.distlib.compat import raw_input
 Decode = raw_input("Decode? ")
 Encode = raw_input("Encode? ")
 alphabet = "abcdefghijklmopqrstuvwxyz"
-decode = raw_input("Type your sentence: ")
-decodeShift = raw_input("How many shifts to the left? ")
 
 
 def decoding():
     if Decode == "Y" or "Yes":
+        decode = raw_input("Type your sentence: ")
+        decodeshift = raw_input("How many shifts to the left? ")
         for letter in decode:
-            if letter.isalpha() and decodeShift.isdigit():
+            if letter.isalpha() and decodeshift.isdigit() and len(decodeshift) == 1:
                 decodenum = alphabet.find(decode)
-                decodenum += decode
+                decodenum += n
                 decoded = alphabet.find("decodenum")
                 print(decoded)
                 if decodenum == "0":
